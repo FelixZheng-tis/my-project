@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Planto.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Average+Sans&family=Gochi+Hand&family=Handlee&family=Indie+Flower&family=Tilt+Prism&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Felix's Project</title>
+</head>
+<body>
+  <div id="menuBar">
+    <img id="menuImg" src="Planto.png" alt="">
+    <button class="menuButton" onclick="window.location.href='index.html';">
+      HOME
+    </button>
+
+    <button class="menuButton" onclick="openDropdown('PSdropdown', 'problemSolution');" id="problemSolution">
+      Problem/Solution
+    </button>
+
+    <button class="menuButton" onclick="openDropdown('ELdropdown', 'elements');" id="elements">
+      Elements
+    </button>
+
+    <button class="menuButton" onclick="openDropdown('LPdropdown', 'learningProcess');" id="learningProcess">
+      Learning Process
+    </button>   
+
+    <button class="menuButton" onclick="openDropdown('FPdropdown', 'futurePlans');" id="futurePlans">
+      Plans for the Future
+    </button> 
+  </div>
+
+  <div class="menuButtonDropdown" style="margin-left: 235px;" id="PSdropdown">
+    <p class="menuButtonDropdownLinks">
+      <a href="findingTheProblem.html">Finding the Problem</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="creatingSolutions.html">Creating Solutions</a>
+    </p>
+  </div>
+
+  <div class="menuButtonDropdown" style="margin-left: 500px;" id="ELdropdown">
+    <p class="menuButtonDropdownLinks">
+      <a href="design.html">Design</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="mainPage.html">Main Page</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="Search.html">Search</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="SearchInfoCard.html">Search Info Card</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="galleryFilters.html">Gallery filters</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="galleryCards.html">Gallery Cards</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="galleryInfoCard.html">Gallery Info Card</a>
+    </p>
+  </div>
+
+  <div class="menuButtonDropdown" style="margin-left: 670px;" id="LPdropdown">
+    <p class="menuButtonDropdownLinks">
+      <a href="learningTheInternet.html">Learning the Internet</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="learning3NewLanguages.html">Learning 3 New Languages</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="findingWebHosting.html">Finding Web Hosting</a>
+    </p>
+  </div>
+
+  <div class="menuButtonDropdown" style="margin-left: 955px;" id="FPdropdown">
+    <p class="menuButtonDropdownLinks">
+      <a href="implementingARealDatabase.html">Implementing a Real Database</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="theWebsiteStack.html">The Website Stack</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="optimisation.html">Optimisation</a>
+    </p>
+  </div>
+  <script src="menuBarScripts.js"></script>
+  
+  <h1>
+    design
+  </h1>
+
+  <p>
+    The style of the website was kind of made on the spot. But the theme or feel I was going for, was 
+    for a very simple big easy to read and understand and child-friendly theme. Like a fun website
+    that is very plain and as simple as it can be. This is because many young students will be using 
+    this website so it is important to adapt to the customer. Also as many wil be using it as a tool
+    to find things, it does not need to look cool but needs to be quick and fast; no content hiding 
+    behind buttons and effects.
+  </p>
+
+  <p>The main stylistic choices: <br>
+    -big black borders <br>
+    -easy rounded corners <br>
+    -easy popups <br>
+    -ubuntu font <br>
+    -big font & pictures & buttons <br>
+    -bright colors <br>
+    -simple style <br>
+  </p>
+
+  <img class="bigImg" src="des1.png" alt="">
+  <img class="bigImg" src="des2.png" alt="">
+  <img class="bigImg" src="des3.png" alt="">
+
+  <h2>
+    CSS stuff
+  </h2>
+
+  <p>
+    one unit that I consistantly used throughout the website is "vw" "vh" because they are percentages 
+    of the viewport. That makes cross-platform possible and also 1 other thing is max-width and max-hieght 
+    which helps with formating
+  </p>
+
+</body>
+</html>

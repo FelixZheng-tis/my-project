@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Planto.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Average+Sans&family=Gochi+Hand&family=Handlee&family=Indie+Flower&family=Tilt+Prism&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Felix's Project</title>
+</head>
+<body>
+  <div id="menuBar">
+    <img id="menuImg" src="Planto.png" alt="">
+    <button class="menuButton" onclick="window.location.href='index.html';">
+      HOME
+    </button>
+
+    <button class="menuButton" onclick="openDropdown('PSdropdown', 'problemSolution');" id="problemSolution">
+      Problem/Solution
+    </button>
+
+    <button class="menuButton" onclick="openDropdown('ELdropdown', 'elements');" id="elements">
+      Elements
+    </button>
+
+    <button class="menuButton" onclick="openDropdown('LPdropdown', 'learningProcess');" id="learningProcess">
+      Learning Process
+    </button>   
+
+    <button class="menuButton" onclick="openDropdown('FPdropdown', 'futurePlans');" id="futurePlans">
+      Plans for the Future
+    </button> 
+  </div>
+
+  <div class="menuButtonDropdown" style="margin-left: 235px;" id="PSdropdown">
+    <p class="menuButtonDropdownLinks">
+      <a href="findingTheProblem.html">Finding the Problem</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="creatingSolutions.html">Creating Solutions</a>
+    </p>
+  </div>
+
+  <div class="menuButtonDropdown" style="margin-left: 500px;" id="ELdropdown">
+    <p class="menuButtonDropdownLinks">
+      <a href="design.html">Design</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="mainPage.html">Main Page</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="Search.html">Search</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="SearchInfoCard.html">Search Info Card</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="galleryFilters.html">Gallery filters</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="galleryCards.html">Gallery Cards</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="galleryInfoCard.html">Gallery Info Card</a>
+    </p>
+  </div>
+
+  <div class="menuButtonDropdown" style="margin-left: 670px;" id="LPdropdown">
+    <p class="menuButtonDropdownLinks">
+      <a href="learningTheInternet.html">Learning the Internet</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="learning3NewLanguages.html">Learning 3 New Languages</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="findingWebHosting.html">Finding Web Hosting</a>
+    </p>
+  </div>
+
+  <div class="menuButtonDropdown" style="margin-left: 955px;" id="FPdropdown">
+    <p class="menuButtonDropdownLinks">
+      <a href="implementingARealDatabase.html">Implementing a Real Database</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="theWebsiteStack.html">The Website Stack</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="optimisation.html">Optimisation</a>
+    </p>
+  </div>
+  <script src="menuBarScripts.js"></script>
+  
+  <h1>
+    Search info card
+  </h1>
+
+  <img class="bigImg" src="des4.png" alt="">
+
+  <p>
+    So as with the way we did the search pop up, the info card is invisible and z-index: back at the beginning of the website 
+    , now each search suggestion is also a button. When they are clicked they filter throught the database again
+    to find which item they are displaying and then they update the info card with the information of that item.
+  </p>
+
+  <p>
+    <a href="http://oogaboo.000.pe/searchBarScripts.js">here is the scripts again</a>
+  </p>
+
+  <p>
+    <a href="http://oogaboo.000.pe/index.html">use inspect on the main page to see the search info card "id = SearchInfoCard"</a>
+  </p>
+
+  <h2>
+    details
+  </h2>
+
+  <p>
+    when a search suggestion is clicked. we do the same filter thing with the searchSuggestionScripts and we filter the database, that way ,
+    each searchSuggestion knows what object they represent, then we use .innerhtml = to change the name, location and 
+    description of the info card. For the image of the info card, we use .src = to change that. Then the usual 
+    opacity and z-index changes.
+  </p>
+
+</body>
+</html>

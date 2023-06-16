@@ -1,0 +1,89 @@
+.menuButton {
+  background-color: rgb(224, 245, 254);
+  font-size: 20pt;
+  font-family: 'Architects Daughter';
+  padding:15px;
+  border: none;
+  border-radius: 20px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  margin-left: 14px;
+  margin-right: 14px;
+  color:rgb(0, 0, 0)
+}
+
+.menuButton:hover {
+  box-shadow: inset 0px 0px 4px 2px rgb(12, 22, 112);
+}
+
+.menuButtonDropdown {
+  font-family: 'Architects Daughter';
+  box-shadow: 0px 0px 3px 2px rgb(169, 168, 168);
+  z-index: -1;
+  position: fixed;
+  top: 87.5px;
+  background-color: white;
+  font-size: 20pt;
+  opacity: 0;
+  padding:15px
+}
+
+.menuButtonDropdownLinks {
+  font-size: 20pt;
+  font-family: 'Architects Daughter';
+}
+
+#menuBar {
+  position: fixed;
+  top:0px;
+  background-color: rgb(224, 245, 254);
+  width: 100vw;
+  box-shadow: 0px 0px 3px 2px rgb(169, 168, 168);
+  z-index: 3;
+}
+
+#menuImg {
+  margin-left: 2vw;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+body {
+  margin: 0px;
+}
+
+p {
+  font-size: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: 'average sans';
+
+}
+
+h1 {
+  margin-top: 127.5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: 'tilt prism';
+  font-size: 50pt;
+  color:rgb(255, 155, 6);
+}
+
+h2 {
+  font-family: 'tilt prism';
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 35pt;
+  color:rgb(148, 72, 0);
+}
+
+.bigImg {
+  max-width: 60vw;
+  margin-left: 20vw;
+  margin-right:20vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+

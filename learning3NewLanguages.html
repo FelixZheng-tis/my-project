@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Planto.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Average+Sans&family=Gochi+Hand&family=Handlee&family=Indie+Flower&family=Tilt+Prism&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Felix's Project</title>
+</head>
+<body>
+  <div id="menuBar">
+    <img id="menuImg" src="Planto.png" alt="">
+    <button class="menuButton" onclick="window.location.href='index.html';">
+      HOME
+    </button>
+
+    <button class="menuButton" onclick="openDropdown('PSdropdown', 'problemSolution');" id="problemSolution">
+      Problem/Solution
+    </button>
+
+    <button class="menuButton" onclick="openDropdown('ELdropdown', 'elements');" id="elements">
+      Elements
+    </button>
+
+    <button class="menuButton" onclick="openDropdown('LPdropdown', 'learningProcess');" id="learningProcess">
+      Learning Process
+    </button>   
+
+    <button class="menuButton" onclick="openDropdown('FPdropdown', 'futurePlans');" id="futurePlans">
+      Plans for the Future
+    </button> 
+  </div>
+
+  <div class="menuButtonDropdown" style="margin-left: 235px;" id="PSdropdown">
+    <p class="menuButtonDropdownLinks">
+      <a href="findingTheProblem.html">Finding the Problem</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="creatingSolutions.html">Creating Solutions</a>
+    </p>
+  </div>
+
+  <div class="menuButtonDropdown" style="margin-left: 500px;" id="ELdropdown">
+    <p class="menuButtonDropdownLinks">
+      <a href="design.html">Design</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="mainPage.html">Main Page</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="Search.html">Search</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="SearchInfoCard.html">Search Info Card</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="galleryFilters.html">Gallery filters</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="galleryCards.html">Gallery Cards</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="galleryInfoCard.html">Gallery Info Card</a>
+    </p>
+  </div>
+
+  <div class="menuButtonDropdown" style="margin-left: 670px;" id="LPdropdown">
+    <p class="menuButtonDropdownLinks">
+      <a href="learningTheInternet.html">Learning the Internet</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="learning3NewLanguages.html">Learning 3 New Languages</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="findingWebHosting.html">Finding Web Hosting</a>
+    </p>
+  </div>
+
+  <div class="menuButtonDropdown" style="margin-left: 955px;" id="FPdropdown">
+    <p class="menuButtonDropdownLinks">
+      <a href="implementingARealDatabase.html">Implementing a Real Database</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="theWebsiteStack.html">The Website Stack</a>
+    </p>
+
+    <p class="menuButtonDropdownLinks">
+      <a href="optimisation.html">Optimisation</a>
+    </p>
+  </div>
+  <script src="menuBarScripts.js"></script>
+  
+  <h1>Learning 3 Languages</h1>
+
+  <p>So learning 3 languages was hard, even harder was learning how they interacted</p>
+
+  <h2>html</h2>
+
+  <p>html is easy at first, but it is the core of the 3 developer languages. Understanding 
+    the html Dom and how parent and child element interacted was important.
+  </p>
+
+  <h2>css</h2>
+
+  <p>On the surface, css is easy, but actually, no. It is actually the hardest bescause its hard to search
+    for what you need to know in css. Like Z-index. targeting hover and checked. negative margin. Using vh vw.
+    targeting id vs class. AGain I am leaving so much stuff out cause theres just too much and it's friday, and 
+    I am struggling to finish this so it would be better to talk in-person about this.
+  </p>
+
+  <h2>Js</h2>
+
+  <p>So yeah this one is hard, you gotta understand how the html dom works, and also
+    I had to learn object oriented programming cause alot of the stuff is methods. But
+    the syntax itself is pretty simple. Again so much stuff left out. talk to me if you want.
+  </p>
+</body>
+</html>
